@@ -1,20 +1,20 @@
-// Data Dummy MMJ Digital Space dengan Dukungan Lintas Angkatan
+// Data Dummy untuk MMJ SMKN 1 Singosari
 const archiveData = [
-    { id: 1, title: "Lomba Poster Digital Antar Kelas", category: "Lomba", batch: "Angkatan 18", date: "12 Oktober 2026", image: "https://images.unsplash.com/photo-1542744094-3a31243364d0?auto=format&fit=crop&w=800&q=80", desc: "Dokumentasi kegiatan kompetisi desain poster digital yang diikuti oleh perwakilan setiap kelas." },
-    { id: 2, title: "Upacara Hari Pahlawan Nasional", category: "Acara Sekolah", batch: "Angkatan 18", date: "10 November 2026", image: "https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=800&q=80", desc: "Liputan foto resmi upacara peringatan Hari Pahlawan oleh tim jurnalis." },
-    { id: 3, title: "Pameran Karya Visual & Sinematografi", category: "Acara Sekolah", batch: "Angkatan 17", date: "15 Desember 2025", image: "https://images.unsplash.com/photo-1515187029135-18ee286d815b?auto=format&fit=crop&w=800&q=80", desc: "Arsip kegiatan pameran akhir tahun dari kakak tingkat angkatan sebelumnya." },
-    { id: 4, title: "Workshop Jurnalistik & Videografi", category: "Organisasi", batch: "Angkatan 17", date: "20 Januari 2025", image: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=800&q=80", desc: "Pelatihan dasar teknik pengambilan video jurnalistik." }
+    { id: 1, title: "Lomba Poster Digital Antar Kelas SMKN 1 Singosari", category: "Lomba", date: "12 Oktober 2026", image: "https://images.unsplash.com/photo-1542744094-3a31243364d0?auto=format&fit=crop&w=800&q=80", desc: "Dokumentasi kegiatan kompetisi desain poster digital yang diikuti oleh perwakilan setiap jurusan di SMKN 1 Singosari." },
+    { id: 2, title: "Upacara Hari Pahlawan Nasional di Lapangan Utama", category: "Acara Sekolah", date: "10 November 2026", image: "https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=800&q=80", desc: "Liputan foto resmi upacara bendera yang diabadikan langsung oleh tim jurnalis sekolah." },
+    { id: 3, title: "Rapat Koordinasi & Evaluasi Divisi Humas MMJ", category: "Organisasi", date: "05 Desember 2026", image: "https://images.unsplash.com/photo-1515187029135-18ee286d815b?auto=format&fit=crop&w=800&q=80", desc: "Agenda bulanan evaluasi program kerja pengurus MMJ serta perencanaan konten liputan kampus." },
+    { id: 4, title: "Workshop Jurnalistik & Videografi Kreatif", category: "Acara Sekolah", date: "20 Januari 2026", image: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=800&q=80", desc: "Pelatihan teknik pengambilan video jurnalistik dan penulisan berita bagi siswa SMKN 1 Singosari." }
 ];
 
 const newsData = [
-    { id: 1, title: "Tim MMJ Raih Juara 1 Kompetisi Jurnalistik Pelajar", category: "Prestasi", batch: "Angkatan 18", date: "15 Februari 2026", author: "Ahmad Rizky", thumbnail: "https://images.unsplash.com/photo-1585829365295-ab7cd400c167?auto=format&fit=crop&w=800&q=80", content: "Tim jurnalistik berhasil menorehkan prestasi gemilang dalam ajang lomba jurnalistik tingkat kabupaten." },
-    { id: 2, title: "Pekan Kreativitas Siswa Resmi Dibuka", category: "Liputan", batch: "Angkatan 17", date: "02 Februari 2025", author: "Dewi Lestari", thumbnail: "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=800&q=80", content: "Acara tahunan sekolah yang menampilkan berbagai karya digital dan fotografi." }
+    { id: 1, title: "Tim MMJ SMKN 1 Singosari Raih Juara 1 Kompetisi Jurnalistik Pelajar", category: "Prestasi", date: "15 Februari 2026", author: "Ahmad Rizky", thumbnail: "https://images.unsplash.com/photo-1585829365295-ab7cd400c167?auto=format&fit=crop&w=800&q=80", content: "Tim jurnalistik SMKN 1 Singosari kembali menorehkan prestasi gemilang setelah melalui proses seleksi ketat dalam ajang lomba jurnalistik tingkat kabupaten." },
+    { id: 2, title: "Pekan Kreativitas Siswa Resmi Dibuka di Aula SMKN 1 Singosari", category: "Liputan", date: "02 Februari 2026", author: "Siti Rahma", thumbnail: "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=800&q=80", content: "Acara tahunan sekolah yang menampilkan berbagai karya digital, fotografi, dan poster interaktif hasil karya siswa dipajang di aula utama." }
 ];
 
 const showcaseData = [
-    { id: 1, title: "Poster Sosialisasi Anti Bullying", category: "Poster", batch: "Angkatan 18", creator: "Dimas Pratama", image: "https://images.unsplash.com/photo-1626785774573-4b799315345d?auto=format&fit=crop&w=800&q=80" },
-    { id: 2, title: "Feed Instagram Kegiatan HUT Sekolah", category: "Social Media", batch: "Angkatan 18", creator: "Nabila Zahra", image: "https://images.unsplash.com/photo-1611162617474-5b21e879e113?auto=format&fit=crop&w=800&q=80" },
-    { id: 3, title: "Banner Pameran Seni Angkatan 17", category: "Banner", batch: "Angkatan 17", creator: "Rian Hidayat", image: "https://images.unsplash.com/photo-1558655146-d09347e92766?auto=format&fit=crop&w=800&q=80" }
+    { id: 1, title: "Poster Sosialisasi Anti Bullying", category: "Poster", creator: "Dimas Pratama", image: "https://images.unsplash.com/photo-1626785774573-4b799315345d?auto=format&fit=crop&w=800&q=80" },
+    { id: 2, title: "Feed Instagram Kegiatan HUT SMKN 1 Singosari", category: "Social Media", creator: "Nabila Zahra", image: "https://images.unsplash.com/photo-1611162617474-5b21e879e113?auto=format&fit=crop&w=800&q=80" },
+    { id: 3, title: "Banner Utama Pameran Karya Seni", category: "Banner", creator: "Fauzan Al Ghifari", image: "https://images.unsplash.com/photo-1558655146-d09347e92766?auto=format&fit=crop&w=800&q=80" }
 ];
 
 // Navigation Switcher
@@ -46,10 +46,7 @@ function renderArchive(data) {
         <div onclick="openArchiveDetail(${item.id})" class="group bg-cardBg border border-cardBorder rounded-2xl overflow-hidden hover:border-blue-500/50 cursor-pointer transition">
             <div class="h-48 overflow-hidden relative">
                 <img src="${item.image}" alt="${item.title}" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
-                <div class="absolute top-3 left-3 flex gap-2">
-                    <span class="bg-darkBg/80 backdrop-blur-md px-2.5 py-1 rounded-full text-xs font-semibold text-blue-400 border border-cardBorder">${item.category}</span>
-                    <span class="bg-darkBg/80 backdrop-blur-md px-2.5 py-1 rounded-full text-xs font-semibold text-emerald-400 border border-cardBorder">${item.batch}</span>
-                </div>
+                <span class="absolute top-3 left-3 bg-darkBg/80 backdrop-blur-md px-3 py-1 rounded-full text-xs font-semibold text-blue-400 border border-cardBorder">${item.category}</span>
             </div>
             <div class="p-5 space-y-2">
                 <span class="text-xs text-gray-500">${item.date}</span>
@@ -60,22 +57,28 @@ function renderArchive(data) {
     `).join('');
 }
 
-function applyArchiveFilters() {
-    const searchVal = document.getElementById('archive-search').value.toLowerCase();
-    const catVal = document.getElementById('archive-cat-filter').value;
-    const batchVal = document.getElementById('archive-batch-filter').value;
-
-    const filtered = archiveData.filter(item => {
-        const matchSearch = item.title.toLowerCase().includes(searchVal);
-        const matchCat = catVal === 'all' || item.category === catVal;
-        const matchBatch = batchVal === 'all' || item.batch === batchVal;
-        return matchSearch && matchCat && matchBatch;
+function filterArchive(category) {
+    document.querySelectorAll('.filter-btn').forEach(btn => {
+        btn.classList.remove('bg-blue-600', 'text-white');
+        btn.classList.add('bg-darkBg', 'text-gray-400', 'border', 'border-cardBorder');
     });
+    event.target.classList.add('bg-blue-600', 'text-white');
+    event.target.classList.remove('bg-darkBg', 'text-gray-400', 'border');
 
-    renderArchive(filtered);
+    if(category === 'all') {
+        renderArchive(archiveData);
+    } else {
+        const filtered = archiveData.filter(item => item.category === category);
+        renderArchive(filtered);
+    }
 }
 
-document.getElementById('archive-search').addEventListener('input', applyArchiveFilters);
+// Search Archive
+document.getElementById('archive-search').addEventListener('input', (e) => {
+    const query = e.target.value.toLowerCase();
+    const filtered = archiveData.filter(item => item.title.toLowerCase().includes(query) || item.category.toLowerCase().includes(query));
+    renderArchive(filtered);
+});
 
 // Render Newsroom
 function renderNews() {
@@ -85,10 +88,7 @@ function renderNews() {
             <div>
                 <div class="h-48 overflow-hidden relative">
                     <img src="${news.thumbnail}" alt="${news.title}" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
-                    <div class="absolute top-3 left-3 flex gap-2">
-                        <span class="bg-darkBg/80 backdrop-blur-md px-2.5 py-1 rounded-full text-xs font-semibold text-purple-400 border border-cardBorder">${news.category}</span>
-                        <span class="bg-darkBg/80 backdrop-blur-md px-2.5 py-1 rounded-full text-xs font-semibold text-emerald-400 border border-cardBorder">${news.batch}</span>
-                    </div>
+                    <span class="absolute top-3 left-3 bg-darkBg/80 backdrop-blur-md px-3 py-1 rounded-full text-xs font-semibold text-purple-400 border border-cardBorder">${news.category}</span>
                 </div>
                 <div class="p-5 space-y-2">
                     <div class="flex items-center justify-between text-xs text-gray-500">
@@ -106,7 +106,7 @@ function renderNews() {
     `).join('');
 }
 
-// Render Members Hub
+// Render Members Hub / Division (Fokus Humas)
 function switchDivision(divKey) {
     document.querySelectorAll('.div-tab').forEach(tab => {
         tab.classList.remove('bg-blue-600', 'text-white');
@@ -119,7 +119,7 @@ function switchDivision(divKey) {
     if(divKey === 'struktur') {
         content.innerHTML = `
             <div class="bg-cardBg border border-cardBorder rounded-2xl p-6 space-y-6">
-                <h3 class="text-xl font-bold text-white">Struktur Kepengurusan MMJ (Lintas Angkatan)</h3>
+                <h3 class="text-xl font-bold text-white">Struktur Kepengurusan MMJ SMKN 1 Singosari</h3>
                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
                     <div class="p-4 rounded-xl bg-darkBg border border-cardBorder">
                         <span class="text-xs text-blue-400 font-semibold">Ketua Umum</span>
@@ -140,9 +140,27 @@ function switchDivision(divKey) {
         content.innerHTML = `
             <div class="bg-cardBg border border-cardBorder rounded-2xl p-8 space-y-6">
                 <div class="space-y-2">
-                    <span class="text-xs font-semibold text-blue-400 uppercase tracking-widest">Profil Divisi</span>
+                    <span class="text-xs font-semibold text-blue-400 uppercase tracking-widest">Pusat Informasi Divisi Utama</span>
                     <h2 class="text-2xl font-bold text-white">Divisi Hubungan Masyarakat (Humas)</h2>
-                    <p class="text-gray-400 text-sm leading-relaxed">Divisi Humas menjembatani komunikasi antara organisasi MMJ dengan sekolah dan pihak luar.</p>
+                    <p class="text-gray-400 text-sm leading-relaxed">Divisi Humas bertanggung jawab sebagai jembatan komunikasi resmi antara organisasi MMJ dengan pihak sekolah SMKN 1 Singosari, siswa, maupun instansi luar, serta mengelola publikasi eksternal.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 pt-4">
+                    <div class="space-y-3">
+                        <h4 class="font-bold text-white">Tugas & Tanggung Jawab</h4>
+                        <ul class="space-y-2 text-sm text-gray-400 list-disc list-inside">
+                            <li>Mengelola komunikasi resmi dan relasi publik sekolah.</li>
+                            <li>Menyebarkan informasi kegiatan kepada seluruh warga SMKN 1 Singosari.</li>
+                            <li>Menjalin kerja sama dokumentasi event internal dan eksternal.</li>
+                        </ul>
+                    </div>
+                    <div class="space-y-3">
+                        <h4 class="font-bold text-white">Program Kerja Utama</h4>
+                        <ul class="space-y-2 text-sm text-gray-400 list-disc list-inside">
+                            <li>Podcast Aspirasi Siswa SMKN 1 Singosari (Bulanan)</li>
+                            <li>Kunjungan Media & Study Banding Kreatif</li>
+                            <li>Pengelolaan Saluran Informasi & Media Sosial Resmi</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         `;
@@ -150,23 +168,20 @@ function switchDivision(divKey) {
         content.innerHTML = `
             <div class="bg-cardBg border border-cardBorder rounded-2xl p-8 space-y-4 text-center">
                 <h3 class="text-xl font-bold text-white">Informasi Divisi ${divKey.toUpperCase()}</h3>
-                <p class="text-gray-400 text-sm">Halaman detail profil dan program kerja divisi.</p>
+                <p class="text-gray-400 text-sm">Halaman detail profil dan program kerja divisi ini sedang diperbarui oleh pengurus.</p>
             </div>
         `;
     }
 }
 
 // Render Design Showcase
-function renderShowcase(data) {
+function renderShowcase() {
     const grid = document.getElementById('showcase-grid');
-    grid.innerHTML = data.map(item => `
+    grid.innerHTML = showcaseData.map(item => `
         <div onclick="openShowcaseDetail(${item.id})" class="group bg-cardBg border border-cardBorder rounded-2xl overflow-hidden hover:border-blue-500/50 cursor-pointer transition">
             <div class="h-64 overflow-hidden relative">
                 <img src="${item.image}" alt="${item.title}" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
-                <div class="absolute top-3 left-3 flex gap-2">
-                    <span class="bg-darkBg/80 backdrop-blur-md px-2.5 py-1 rounded-full text-xs font-semibold text-emerald-400 border border-cardBorder">${item.category}</span>
-                    <span class="bg-darkBg/80 backdrop-blur-md px-2.5 py-1 rounded-full text-xs font-semibold text-blue-400 border border-cardBorder">${item.batch}</span>
-                </div>
+                <span class="absolute top-3 left-3 bg-darkBg/80 backdrop-blur-md px-3 py-1 rounded-full text-xs font-semibold text-emerald-400 border border-cardBorder">${item.category}</span>
             </div>
             <div class="p-5 space-y-1">
                 <h3 class="text-lg font-bold text-white group-hover:text-emerald-400 transition">${item.title}</h3>
@@ -174,16 +189,6 @@ function renderShowcase(data) {
             </div>
         </div>
     `).join('');
-}
-
-function applyShowcaseFilter() {
-    const batchVal = document.getElementById('showcase-batch-filter').value;
-    if(batchVal === 'all') {
-        renderShowcase(showcaseData);
-    } else {
-        const filtered = showcaseData.filter(item => item.batch === batchVal);
-        renderShowcase(filtered);
-    }
 }
 
 // Modal Handlers
@@ -195,7 +200,7 @@ function openArchiveDetail(id) {
     modalContent.innerHTML = `
         <img src="${item.image}" class="w-full h-72 object-cover rounded-xl">
         <div class="space-y-2">
-            <span class="text-xs text-blue-400 font-semibold">${item.category} · ${item.batch} · ${item.date}</span>
+            <span class="text-xs text-blue-400 font-semibold">${item.category} · ${item.date}</span>
             <h2 class="text-2xl font-bold text-white">${item.title}</h2>
             <p class="text-gray-300 text-sm leading-relaxed">${item.desc}</p>
         </div>
@@ -209,7 +214,7 @@ function openNewsDetail(id) {
         <img src="${news.thumbnail}" class="w-full h-72 object-cover rounded-xl">
         <div class="space-y-3">
             <div class="flex items-center justify-between text-xs text-gray-400">
-                <span class="text-purple-400 font-semibold">${news.category} (${news.batch})</span>
+                <span class="text-purple-400 font-semibold">${news.category}</span>
                 <span>${news.date} | Oleh: ${news.author}</span>
             </div>
             <h2 class="text-2xl font-bold text-white">${news.title}</h2>
@@ -224,7 +229,7 @@ function openShowcaseDetail(id) {
     modalContent.innerHTML = `
         <img src="${item.image}" class="w-full max-h-[75vh] object-contain rounded-xl bg-darkBg">
         <div class="space-y-2 text-center">
-            <span class="text-xs text-emerald-400 font-semibold">${item.category} · ${item.batch}</span>
+            <span class="text-xs text-emerald-400 font-semibold">${item.category}</span>
             <h2 class="text-xl font-bold text-white">${item.title}</h2>
             <p class="text-xs text-gray-400">Dibuat oleh ${item.creator}</p>
         </div>
@@ -240,6 +245,6 @@ function closeModal() {
 window.addEventListener('DOMContentLoaded', () => {
     renderArchive(archiveData);
     renderNews();
-    switchDivision('struktur');
-    renderShowcase(showcaseData);
+    switchDivision('humas'); // Default tab ke Humas sesuai permintaan
+    renderShowcase();
 });
