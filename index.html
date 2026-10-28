@@ -1,181 +1,273 @@
+
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MMJ Digital Space - Multimedia Jurnalistik SMKN 1 Singosari</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MMJ Digital Space — Multimedia Jurnalistik SMKN 1 Singosari</title>
+  <meta name="description" content="MMJ Digital Space adalah ruang digital Multimedia Jurnalistik SMK Negeri 1 Singosari untuk dokumentasi, berita, profil anggota, kritik dan saran, serta galeri desain." />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-    <!-- NAVBAR -->
-    <header class="navbar">
-        <div class="nav-container">
-            <a href="#" class="nav-logo" onclick="switchPage('home')">
-                <div class="logo-circle">MMJ</div>
-                <span class="logo-text">MMJ Digital Space</span>
-            </a>
-            <nav class="nav-menu" id="navMenu">
-                <a href="#" class="nav-link active" onclick="switchPage('home')">Beranda</a>
-                <a href="#" class="nav-link" onclick="switchPage('archive')">Memory Archive</a>
-                <a href="#" class="nav-link" onclick="switchPage('news')">Newsroom</a>
-                <a href="#" class="nav-link" onclick="switchPage('members')">Members Hub</a>
-                <a href="#" class="nav-link" onclick="switchPage('design')">Desain-Desain</a>
-                <a href="#" class="nav-link" onclick="switchPage('feedback')">Kritik & Saran</a>
-            </nav>
-            <div class="hamburger" id="hamburger"><i class="fa-solid fa-bars"></i></div>
-        </div>
-    </header>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#/" class="brand">
+        <img src="https://placehold.co/48x48/0b1220/ffffff?text=MMJ" alt="Logo MMJ" class="brand-logo" id="brandLogo" />
+        <span class="brand-text">
+          <strong>MMJ Digital Space</strong>
+          <small>Multimedia Jurnalistik · SMKN 1 Singosari</small>
+        </span>
+      </a>
 
-    <!-- MAIN CONTENT -->
-    <main class="main-content">
-        <!-- Beranda -->
-        <section id="home" class="page active-page">
-            <div class="hero">
-                <div class="hero-badge">Multimedia Jurnalistik · SMK Negeri 1 Singosari</div>
-                <h1 class="hero-headline">Setiap momen punya cerita.</h1>
-                <p class="hero-tagline">CAPTURE THE MOMENT, PRESERVE THE STORY.</p>
-                <div class="hero-cta">
-                    <button class="btn btn-primary" onclick="switchPage('archive')">Jelajahi Arsip</button>
-                    <button class="btn btn-secondary" onclick="switchPage('news')">Baca Berita</button>
-                </div>
-            </div>
-            <div class="shortcuts-section">
-                <h2 class="section-title">Eksplorasi Utama</h2>
-                <div class="shortcuts-grid">
-                    <div class="shortcut-card" onclick="switchPage('archive')">
-                        <div class="sc-icon"><i class="fa-solid fa-photo-film"></i></div>
-                        <h3>Memory Archive</h3>
-                        <p>Dokumentasi foto dan video kegiatan sekolah.</p>
-                        <span class="sc-link">Buka Arsip <i class="fa-solid fa-arrow-right"></i></span>
-                    </div>
-                    <div class="shortcut-card" onclick="switchPage('news')">
-                        <div class="sc-icon"><i class="fa-solid fa-newspaper"></i></div>
-                        <h3>Newsroom</h3>
-                        <p>Berita, artikel, dan hasil liputan sekolah.</p>
-                        <span class="sc-link">Baca Berita <i class="fa-solid fa-arrow-right"></i></span>
-                    </div>
-                    <div class="shortcut-card" onclick="switchPage('members')">
-                        <div class="sc-icon"><i class="fa-solid fa-users"></i></div>
-                        <h3>Members Hub</h3>
-                        <p>Struktur organisasi, profil anggota, dan Divisi Humas.</p>
-                        <span class="sc-link">Kenal Anggota <i class="fa-solid fa-arrow-right"></i></span>
-                    </div>
-                </div>
-            </div>
-        </section>
+      <nav class="desktop-nav" aria-label="Navigasi utama">
+        <a href="#/" data-nav>Beranda</a>
+        <a href="#/memory-archive" data-nav>Memory Archive</a>
+        <a href="#/newsroom" data-nav>Newsroom</a>
+        <a href="#/members-hub" data-nav>Members Hub</a>
+        <a href="#/kritik-saran" data-nav>Kritik &amp; Saran</a>
+        <a href="#/design-showcase" data-nav>Desain-Desain</a>
+      </nav>
 
-        <!-- Memory Archive -->
-        <section id="archive" class="page">
-            <div class="page-header">
-                <h2>Memory Archive</h2>
-                <p>Dokumentasi visual kegiatan sekolah.</p>
-            </div>
-            <div class="filter-bar">
-                <input type="text" id="archiveSearch" placeholder="Cari kegiatan..." onkeyup="filterArchive()">
-                <div class="filter-buttons">
-                    <button class="filter-btn active" onclick="filterCategory('all', this)">Semua</button>
-                    <button class="filter-btn" onclick="filterCategory('Event', this)">Event</button>
-                    <button class="filter-btn" onclick="filterCategory('Upacara', this)">Upacara</button>
-                    <button class="filter-btn" onclick="filterCategory('Lomba', this)">Lomba</button>
-                </div>
-            </div>
-            <div class="archive-grid" id="archiveGrid"></div>
-        </section>
-
-        <!-- Newsroom -->
-        <section id="news" class="page">
-            <div class="page-header">
-                <h2>Newsroom</h2>
-                <p>Berita dan artikel liputan sekolah.</p>
-            </div>
-            <div class="news-grid" id="newsGrid"></div>
-        </section>
-
-        <!-- News Detail -->
-        <section id="newsDetail" class="page">
-            <button class="btn-back" onclick="switchPage('news')"><i class="fa-solid fa-arrow-left"></i> Kembali</button>
-            <div class="news-detail-container" id="newsDetailContent"></div>
-        </section>
-
-        <!-- Members Hub -->
-        <section id="members" class="page">
-            <div class="page-header">
-                <h2>Members Hub</h2>
-                <p>Pusat informasi anggota dan divisi MMJ.</p>
-            </div>
-            <div class="hub-tabs">
-                <button class="hub-tab-btn active" onclick="switchHubTab('structure')">Struktur Organisasi</button>
-                <button class="hub-tab-btn" onclick="switchHubTab('humas')">Divisi Humas</button>
-            </div>
-            <div id="tabStructure" class="hub-tab-content active">
-                <div class="org-structure">
-                    <div class="org-card leader"><h4>Ketua MMJ</h4><p>Ahmad Fauzi</p></div>
-                    <div class="org-row">
-                        <div class="org-card"><h4>Sekretaris</h4><p>Siti Aminah</p></div>
-                        <div class="org-card"><h4>Bendahara</h4><p>Budi Santoso</p></div>
-                    </div>
-                </div>
-            </div>
-            <div id="tabHumas" class="hub-tab-content">
-                <div class="humas-container">
-                    <div class="humas-info">
-                        <h3>Divisi Hubungan Masyarakat (Humas)</h3>
-                        <p>Mengelola komunikasi publik, relasi eksternal, dan publikasi informasi kegiatan.</p>
-                        <h4>Kontak Resmi:</h4>
-                        <p><i class="fa-solid fa-envelope"></i> humas.mmjsmkn1sgs@gmail.com</p>
-                        <p><i class="fa-brands fa-instagram"></i> @mmj.smkn1singosari</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Design Showcase -->
-        <section id="design" class="page">
-            <div class="page-header">
-                <h2>Desain-Desain</h2>
-                <p>Galeri karya visual anggota MMJ.</p>
-            </div>
-            <div class="filter-bar">
-                <div class="filter-buttons">
-                    <button class="filter-btn active" onclick="filterDesign('all', this)">Semua</button>
-                    <button class="filter-btn" onclick="filterDesign('Poster', this)">Poster</button>
-                    <button class="filter-btn" onclick="filterDesign('Feeds', this)">Feeds IG</button>
-                    <button class="filter-btn" onclick="filterDesign('Banner', this)">Banner</button>
-                </div>
-            </div>
-            <div class="design-grid" id="designGrid"></div>
-        </section>
-
-        <!-- Kritik & Saran -->
-        <section id="feedback" class="page">
-            <div class="page-header">
-                <h2>Kritik & Saran</h2>
-                <p>Sampaikan masukan konstruktif untuk MMJ.</p>
-            </div>
-            <div class="feedback-card">
-                <div class="fb-icon"><i class="fa-solid fa-comments"></i></div>
-                <h3>Formulir Masukan</h3>
-                <p>Terhubung langsung ke Google Forms / Google Drive resmi.</p>
-                <a href="https://forms.gle/placeholder-gform-url" target="_blank" class="btn btn-primary">Buka Formulir <i class="fa-solid fa-external-link-alt"></i></a>
-            </div>
-        </section>
-    </main>
-
-    <!-- Lightbox -->
-    <div class="lightbox" id="lightbox" onclick="closeLightbox()">
-        <span class="lightbox-close">&times;</span>
-        <img id="lightboxImg" src="" alt="Zoom">
-        <p id="lightboxCaption"></p>
+      <button class="hamburger" id="hamburger" aria-label="Buka menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
     </div>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <p>&copy; 2026 MMJ Digital Space · Multimedia Jurnalistik SMK Negeri 1 Singosari.</p>
-    </footer>
+    <nav class="mobile-nav" id="mobileNav" aria-label="Navigasi mobile">
+      <a href="#/" data-nav>Beranda</a>
+      <a href="#/memory-archive" data-nav>Memory Archive</a>
+      <a href="#/newsroom" data-nav>Newsroom</a>
+      <a href="#/members-hub" data-nav>Members Hub</a>
+      <a href="#/kritik-saran" data-nav>Kritik &amp; Saran</a>
+      <a href="#/design-showcase" data-nav>Desain-Desain</a>
+    </nav>
+  </header>
 
-    <script src="script.js"></script>
+  <main id="app">
+    <!-- Beranda -->
+    <section class="page" id="page-home">
+      <div class="hero">
+        <div class="container hero-inner">
+          <img src="https://placehold.co/120x120/0b1220/ffffff?text=MMJ" alt="Logo MMJ" class="hero-logo" />
+          <p class="eyebrow">Multimedia Jurnalistik · SMK Negeri 1 Singosari</p>
+          <h1>MMJ Digital Space</h1>
+          <p class="tagline">CAPTURE THE MOMENT, PRESERVE THE STORY.</p>
+          <h2 class="headline">Setiap momen punya cerita.</h2>
+          <p class="hero-desc">
+            Ruang digital untuk menyimpan dokumentasi kegiatan, mempublikasikan liputan,
+            mengenal anggota organisasi, serta menampilkan karya desain Multimedia Jurnalistik.
+          </p>
+        </div>
+      </div>
+
+      <section class="section">
+        <div class="container">
+          <div class="section-head">
+            <h3>Jelajahi MMJ</h3>
+            <p>Akses cepat ke fitur utama MMJ Digital Space.</p>
+          </div>
+
+          <div class="shortcut-grid">
+            <a class="shortcut-card" href="#/memory-archive">
+              <div class="icon">🖼️</div>
+              <h4>Memory Archive</h4>
+              <p>Dokumentasi foto dan video kegiatan sekolah.</p>
+              <span class="card-link">Buka arsip →</span>
+            </a>
+
+            <a class="shortcut-card" href="#/newsroom">
+              <div class="icon">📰</div>
+              <h4>Newsroom</h4>
+              <p>Berita, artikel, dan hasil liputan sekolah.</p>
+              <span class="card-link">Baca berita →</span>
+            </a>
+
+            <a class="shortcut-card" href="#/members-hub">
+              <div class="icon">👥</div>
+              <h4>Members Hub</h4>
+              <p>Struktur organisasi, profil anggota, dan divisi.</p>
+              <span class="card-link">Lihat anggota →</span>
+            </a>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <!-- Memory Archive -->
+    <section class="page hidden" id="page-memory-archive">
+      <div class="container">
+        <div class="section-head">
+          <h3>Memory Archive</h3>
+          <p>Arsip dokumentasi foto dan video kegiatan sekolah.</p>
+        </div>
+
+        <div class="toolbar">
+          <input type="search" id="memorySearch" placeholder="Cari kegiatan, lokasi, atau tanggal..." />
+          <select id="memoryCategory">
+            <option value="all">Semua Kategori</option>
+            <option value="Acara Sekolah">Acara Sekolah</option>
+            <option value="Lomba">Lomba</option>
+            <option value="Ekstrakurikuler">Ekstrakurikuler</option>
+            <option value="Kegiatan Sosial">Kegiatan Sosial</option>
+          </select>
+        </div>
+
+        <div class="card-grid" id="memoryGrid"></div>
+        <p class="empty-state hidden" id="memoryEmpty">Dokumentasi tidak ditemukan.</p>
+      </div>
+    </section>
+
+    <!-- Newsroom -->
+    <section class="page hidden" id="page-newsroom">
+      <div class="container">
+        <div class="section-head">
+          <h3>Newsroom</h3>
+          <p>Berita, artikel, dan hasil liputan kegiatan sekolah.</p>
+        </div>
+
+        <div class="toolbar">
+          <input type="search" id="newsSearch" placeholder="Cari berita, penulis, atau kategori..." />
+          <select id="newsCategory">
+            <option value="all">Semua Kategori</option>
+            <option value="Prestasi">Prestasi</option>
+            <option value="Kegiatan">Kegiatan</option>
+            <option value="Pengumuman">Pengumuman</option>
+            <option value="Liputan">Liputan</option>
+          </select>
+        </div>
+
+        <div class="news-grid" id="newsGrid"></div>
+        <p class="empty-state hidden" id="newsEmpty">Berita tidak ditemukan.</p>
+      </div>
+    </section>
+
+    <!-- Detail berita -->
+    <section class="page hidden" id="page-news-detail">
+      <div class="container narrow">
+        <a href="#/newsroom" class="back-link">← Kembali ke Newsroom</a>
+        <article id="newsDetail"></article>
+      </div>
+    </section>
+
+    <!-- Members Hub -->
+    <section class="page hidden" id="page-members-hub">
+      <div class="container">
+        <div class="section-head">
+          <h3>Members Hub</h3>
+          <p>Pusat informasi anggota, struktur organisasi, dan divisi Multimedia Jurnalistik.</p>
+        </div>
+
+        <div class="org-grid">
+          <div class="info-card">
+            <h4>Struktur Organisasi</h4>
+            <p class="muted">Perbarui nama, jabatan, dan foto anggota melalui data anggota pada <code>script.js</code>.</p>
+            <div id="structureList" class="structure-list"></div>
+          </div>
+
+          <div class="info-card">
+            <h4>Divisi MMJ</h4>
+            <div id="divisionList" class="division-list"></div>
+          </div>
+        </div>
+
+        <div class="section-head">
+          <h4>Profil Anggota</h4>
+        </div>
+        <div class="member-grid" id="memberGrid"></div>
+
+        <div class="humas-panel" id="humasPanel">
+          <div class="section-head">
+            <h4>Divisi Humas</h4>
+            <p>Hubungan Masyarakat Multimedia Jurnalistik.</p>
+          </div>
+          <div class="humas-grid">
+            <div class="info-card">
+              <h5>Profil Divisi</h5>
+              <p id="humasProfile"></p>
+            </div>
+            <div class="info-card">
+              <h5>Tugas Utama</h5>
+              <ul id="humasTasks"></ul>
+            </div>
+            <div class="info-card">
+              <h5>Program Kerja</h5>
+              <ul id="humasPrograms"></ul>
+            </div>
+            <div class="info-card">
+              <h5>Kontak Resmi</h5>
+              <div id="humasContacts"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Kritik & Saran -->
+    <section class="page hidden" id="page-kritik-saran">
+      <div class="container narrow">
+        <div class="section-head">
+          <h3>Kritik &amp; Saran</h3>
+          <p>Sampaikan masukan, evaluasi, atau saran untuk pengembangan MMJ Digital Space dan organisasi Multimedia Jurnalistik.</p>
+        </div>
+
+        <div class="feedback-card">
+          <div class="icon large">💬</div>
+          <h4>Formulir Kritik &amp; Saran</h4>
+          <p>
+            Klik tombol di bawah untuk membuka formulir resmi. Tautan saat ini masih menggunakan placeholder
+            dan dapat diganti dengan Google Forms atau Google Drive milik MMJ.
+          </p>
+          <a id="feedbackButton" class="btn primary" href="#" target="_blank" rel="noopener noreferrer">
+            Buka Formulir Kritik &amp; Saran
+          </a>
+          <p class="muted small">Placeholder URL: <code>https://forms.gle/GANTI-DENGAN-LINK-ASLI</code></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Design Showcase -->
+    <section class="page hidden" id="page-design-showcase">
+      <div class="container">
+        <div class="section-head">
+          <h3>Desain-Desain</h3>
+          <p>Galeri karya desain anggota MMJ: poster, banner, feed media sosial, dan publikasi acara.</p>
+        </div>
+
+        <div class="toolbar">
+          <input type="search" id="designSearch" placeholder="Cari judul karya atau desainer..." />
+          <select id="designCategory">
+            <option value="all">Semua Kategori</option>
+            <option value="Poster">Poster</option>
+            <option value="Banner">Banner</option>
+            <option value="Feed Instagram">Feed Instagram</option>
+            <option value="Publikasi Acara">Publikasi Acara</option>
+          </select>
+        </div>
+
+        <div class="design-grid" id="designGrid"></div>
+        <p class="empty-state hidden" id="designEmpty">Karya desain tidak ditemukan.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <strong>MMJ Digital Space</strong>
+        <p>Multimedia Jurnalistik · SMK Negeri 1 Singosari</p>
+      </div>
+      <p class="muted">CAPTURE THE MOMENT, PRESERVE THE STORY.</p>
+    </div>
+  </footer>
+
+  <!-- Lightbox -->
+  <div class="lightbox hidden" id="lightbox" role="dialog" aria-modal="true">
+    <button class="lightbox-close" id="lightboxClose" aria-label="Tutup">×</button>
+    <img id="lightboxImage" src="" alt="Tampilan besar" />
+    <p id="lightboxCaption"></p>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
